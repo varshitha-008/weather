@@ -1,0 +1,114 @@
+.main-container {
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #195eab, #c3d6e8, #e2ebf4);
+    border-radius: 10px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid orange;
+    background-color: black;
+    color: white;
+  }
+  
+  .search-btn {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  .search-btn:hover {
+    background-color: #ff9933;
+  }
+  
+  .weather-display {
+    text-align: center;
+  
+
+    
+   
+  }
+  
+  .weather-display h2 {
+    color: #61feda;
+  }
+  
+  .weather-display p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .unit-btn, .favorite-btn {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .unit-btn:hover, .favorite-btn:hover {
+    background-color: #ff9933;
+  }
+  
+  .unit-btn {
+    background-color: #ff9933;
+  }
+  
+  .favorite-btn {
+    background-color: #ff4d4d;
+  }
+  
+  .favorite-btn svg {
+    margin-right: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-input, .search-btn {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+  
+    .weather-display p {
+      font-size: 1em;
+    }
+  
+    .unit-btn, .favorite-btn {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-input, .search-btn {
+      font-size: 0.8em;
+      padding: 6px;
+    }
+  
+    .weather-display p {
+      font-size: 0.9em;
+    }
+  
+    .unit-btn, .favorite-btn {
+      font-size: 0.8em;
+      padding: 6px;
+    }
+  }
+  

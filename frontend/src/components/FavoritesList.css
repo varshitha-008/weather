@@ -1,0 +1,82 @@
+.favorites-container {
+    margin-top: 20px;
+  }
+  
+  .favorites-container h3 {
+    color: orange;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .favorite-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .favorite-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .favorite-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .favorite-details h4 {
+    color: #ff9933;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .favorite-actions button {
+    background-color: #195eab;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorite-actions button:hover {
+    background-color: #144d8a;
+  }
+  
+  .search-btn {
+    background-color: #61feda;
+  }
+  
+  .search-btn:hover {
+    background-color: #46cbac;
+  }
+  
+  .remove-btn {
+    background-color: #ff4d4d;
+  }
+  
+  .remove-btn:hover {
+    background-color: #cc0000;
+  }
+  
