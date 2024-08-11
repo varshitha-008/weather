@@ -31,8 +31,8 @@ const Main = ({ onSearch, weatherData, onAddFavorite, onRemoveFavorite, favorite
         </button>
       </form>
 
-      {weatherData && (
-        <div className="weather-display">
+      {/* {weatherData && (
+        <div  className="weather-display">
           <h2>{weatherData.name}</h2>
           <p>{weatherData.weather[0].description}</p>
           <p>Temperature: {weatherData.main.temp} {unit === 'metric' ? '°C' : '°F'}</p>
@@ -49,7 +49,7 @@ const Main = ({ onSearch, weatherData, onAddFavorite, onRemoveFavorite, favorite
             </button>
           )}
         </div>
-      )}
+      )} */}
     </div>
   );
 };

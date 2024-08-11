@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaPlus } from 'react-icons/fa';
+import './WeatherDashboard.css';
 
 const WeatherDashboard = ({ weatherData, onAddFavorite, unit }) => {
   if (!weatherData) return null;
@@ -6,9 +8,11 @@ const WeatherDashboard = ({ weatherData, onAddFavorite, unit }) => {
   return (
     <div className="weather-dashboard">
       <h2>Weather in {weatherData.city}</h2>
-      <p>{weatherData.weather[0].description}</p>
-      <p>Temperature: {weatherData.main.temp}° {unit === 'metric' ? 'C' : 'F'}</p>
-      <button onClick={() => onAddFavorite(weatherData.city)}>Add to Favorites</button>
+      <p className="description">{weatherData.weather[0].description}</p>
+      <p className="temperature">Temperature: {weatherData.main.temp}° {unit === 'metric' ? 'C' : 'F'}</p>
+      <button className="add-favorite-btn" onClick={() => onAddFavorite(weatherData.city)}>
+        <FaPlus className="icon" /> Add to Favorites
+      </button>
     </div>
   );
 };
